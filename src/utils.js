@@ -23,7 +23,7 @@ const failure = (error, counterexample) => {
         counterexample = {};
 
     return {
-        Fail: trimMax(error || "", 200),
+        Fail: trimMax(error || "", 300),
         counter: counterexample.Counterexample[0]
     }
 }
